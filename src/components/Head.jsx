@@ -21,7 +21,7 @@ const Head = () => {
           type="text"
           placeholder="🔍 Search"
         />
-        <button className="border border-l-0 border-gray-400 rounded-r-full px-5 py-2">
+        <button className="border border-l-0 border-gray-400 rounded-r-full px-5 py-2 bg-gray-100">
           🔍
         </button>
       </div>
