@@ -1,24 +1,28 @@
 import "./App.css";
 import Head from "./components/Head";
 import Body from "./components/Body";
-import MainContainer from "./components/MainContainer";
+import { Provider } from "react-redux";
+import store from "./utils/store";
+
 function App() {
   return (
-    <div>
-      <Head />
-      <Body />
+    <Provider store={store}>
+      <div>
+        <Head />
+        <Body />
 
-      {/*
-       * Head
-       * Body
-       * * Sidebar
-       *     Menu Items
-       *   MainContent
-       *     ButtonList
-       *     VideoContainer
-       *      VideoCard
-       */}
-    </div>
+        {/*
+         * Head
+         * Body
+         * * Sidebar
+         *     Menu Items
+         *   MainContent
+         *     ButtonList
+         *     VideoContainer
+         *      VideoCard
+         */}
+      </div>
+    </Provider>
   );
 }
 
